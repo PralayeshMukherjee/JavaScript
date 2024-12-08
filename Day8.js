@@ -44,4 +44,5 @@ let arr3 = [1,2,3,4,5,6,32,12,true,"raj"];
 let newArr3 = arr3.reduce((h1,h2)=>{
     return h1+h2;
 });
+//it do the operation which you want to perform with all the elements in the array like here I use addition means add the all the element present in the array and also add the boolean value like for true it add 1 and for false it add 0 & if any string present it just concat
 console.log(newArr3);
