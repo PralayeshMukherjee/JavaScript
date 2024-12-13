@@ -1,8 +1,5 @@
 // 1) create an array of numbers and take input from the user to add numbers to this array
 // 2) keep adding numbers to the array in 1 until 0 is added to the array
-// 3) filter for numbers divisible by 10 from a given array
-// 4) create an array of sqare of given numbers
-// 5) use reduce the calculate multiplication of a given number from an array of first n natural numbers. (n being the number whose multiplication needs to be calculated)
 
 let arr = [];
 let n = prompt("Enter the numbers of element you want to insert: ");
@@ -23,15 +20,20 @@ for(let i of arr){
     console.log(i);
 }
 
+// 3) filter for numbers divisible by 10 from a given array
+
 let divisableBy10 = arr.filter((value)=>{
     return value%10==0;
 })
 console.log(divisableBy10);
 
+// 4) create an array of sqare of given numbers
 let squer = arr.map((value)=>{
     return value*value;
 })
 console.log(squer);
+
+// 5) use reduce the calculate multiplication of a given number from an array of first n natural numbers. (n being the number whose multiplication needs to be calculated)
 
 let reduceArray = arr.reduce((value1, value2)=>{
     return value1*value2;
