@@ -2,6 +2,9 @@
 const drivePrompt = ()=>{
     let age = prompt("Enter your age: ");
     age = Number.parseInt(age);
+    if(age<0){
+        console.error("age cann't be negative!!!");
+    }
     if(age>=18){
         alert("You can drive");
     }else{
@@ -17,5 +20,9 @@ if(again==true){
 }
 
 // Q3) In the previous question use console.error to log the error if the age entered is negative
+
+drivePrompt();
+
+
 // Q4) Write a program to change the url to google.com(redirection) if user enters a number greater than 4
 // Q5) Change the background of the page to yellow red or any other color based on user input throught prompt
