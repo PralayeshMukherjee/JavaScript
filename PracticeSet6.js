@@ -23,6 +23,13 @@ if(again==true){
 
 drivePrompt();
 
-
 // Q4) Write a program to change the url to google.com(redirection) if user enters a number greater than 4
+
+let redirection = prompt("Enter the number: ");
+redirection = Number.parseInt(redirection);
+if(redirection>4){
+    window.location.href = "https://www.google.com/"
+}
+
+
 // Q5) Change the background of the page to yellow red or any other color based on user input throught prompt
