@@ -31,5 +31,7 @@ if(redirection>4){
     window.location.href = "https://www.google.com/"
 }
 
-
 // Q5) Change the background of the page to yellow red or any other color based on user input throught prompt
+
+let color = prompt("Enter the color of background in the webpage:- ");
+document.body.style.background = color;
