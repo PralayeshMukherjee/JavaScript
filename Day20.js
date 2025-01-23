@@ -16,7 +16,7 @@ let p3 = new Promise((resolve,reject)=>{
 })
 
 // if all thing resolve then we use promise all method
-// let promiseAll = Promise.all([p1,p2,p3]);
+let promiseAll = Promise.all([p1,p2,p3]);
 promiseAll.then((value)=>{
     console.log(value);
 })
