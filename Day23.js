@@ -24,3 +24,25 @@ p1.then((value)=>{
 }).then((value)=>{
     console.log(value);
 })
+
+const createTodo = async ()=>{
+    let options1 = {
+        method: "POST",
+        headers: {
+            "Content-type":"application/json"
+        },
+        body: JSON.stringify({
+            title: 'foo',
+            body: 'bar',
+            userId: 1,
+        }),
+    }
+    let p2 = await fetch('https://jsonplaceholder.typicode.com/posts',options1);
+    let response = await p2.json();
+    return response;
+}
+const mainFunc = async () =>{
+    let todo = await createTodo();
+    console.log(todo);
+}
+mainFunc();
